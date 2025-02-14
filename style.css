@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   min-height: 100%;
   background-color: aqua;
   box-sizing: border-box;
+  font-family: "Work Sans", serif;
 }
 
 #container {
@@ -27,20 +30,77 @@ body {
 #container #secaoFaq {
   background-color: hsl(275, 100%, 97%);
   width: 100%;
-  height: 500px;
+  height: 650px;
 }
 
 #container #centralizada {
   background-color: white;
   width: 550px;
-  height: 450px;
+  height: 80%;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: center;
   justify-content: center;
   border-radius: 10px;
+}
+
+#centralizada{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+
+#centralizada h1{
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(292, 42%, 14%);
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+#centralizada div p{
+  display: none;
+  font-size: 16px;
+}
+
+#centralizada #tituloFaq{
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+}
+
+#centralizada .faq{
+  gap: 60px;
+
+
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.faq h2{
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(292, 42%, 14%);
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.faq img{
+  width: 30px;
+  height: 70px;
+}
+
+hr{
+  width: 100%;
+  border: 1px solid hsl(0, 0%, 90%);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
